@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    tools:context="com.example.hwwv2.MainActivity"
+    tools:ignore="MergeRootFrame" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TableRow 
+
+    android:id="@+id/MyRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+        <AutoCompleteTextView
+            android:id="@+id/auto_names"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_weight="0"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:textSize="20sp" />
+    
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/calculate"
+            android:text="@string/mySearch"
+            android:textColor="#ffffff" />
+
+</TableRow>
+
+<TableRow 
+
+    android:id="@+id/MyRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:layout_weight="1"
+        android:paddingBottom="3dp" />
+
+</TableRow>  
+
+<TableRow 
+
+    android:id="@+id/MyRow2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <TextView
+          android:id="@+id/Name"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/name"
+          android:textSize="20sp" />
+      
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="1dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0"
+          android:textSize="20sp" />
+
+</TableRow>  
+
+<TableRow 
+
+    android:id="@+id/MyRow3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_weight="1"
+        android:background="#1B9AF7"
+        android:paddingBottom="3dp" />
+
+</TableRow>  
+   
+<TableRow
+    android:id="@+id/MyRow4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="@string/height"
+         android:textSize="20sp" />
+    
+      <EditText
+          android:id="@+id/heightvalue"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0"
+          android:background="@null"
+          android:ems="10"
+          android:hint="@string/heightValue"
+          android:inputType="number"
+          android:maxLength="3"
+          android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+</TableRow>  
+
+<TableRow 
+
+    android:id="@+id/MyRow5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textSize="15sp" />
+
+</TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow18"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_weight="1"
+        android:background="#1B9AF7"
+        android:paddingBottom="3dp" />
+
+</TableRow>  
+
+<TableRow
+    android:id="@+id/MyRow6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+         android:id="@+id/weight"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="@string/weight"
+         android:textSize="20sp" />
+    
+      <EditText
+          android:id="@+id/editText2"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0"
+          android:background="@null"
+          android:ems="10"
+          android:hint="@string/weightHint"
+          android:inputType="numberDecimal"
+          android:maxLength="4"
+          android:textSize="20sp" />
+
+
+</TableRow>  
+  
+<TableRow 
+
+    android:id="@+id/MyRow7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp" />
+
+</TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_weight="1"
+        android:background="#1B9AF7"
+        android:paddingBottom="3dp" />
+
+</TableRow> 
+
+<TableRow
+    android:id="@+id/MyRow9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="@string/age" />
+    
+      <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp" />
+      </TableRow> 
+      
+<TableRow
+    android:id="@+id/MyRow20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+        android:id="@+id/dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="@string/birthDate" />
+    
+      <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp" />
+      </TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:layout_weight="1"
+        android:paddingBottom="3dp" />
+
+</TableRow>  
+
+<TableRow
+    android:id="@+id/MyRow23"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+        android:id="@+id/odeama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="@string/ode" />
+    
+      <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp" />
+      </TableRow> 
+      
+<TableRow 
+
+    android:id="@+id/MyRow24"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view15"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:layout_weight="1"
+        android:paddingBottom="3dp" />
+
+</TableRow> 
+
+<TableRow
+    android:id="@+id/MyRow11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="@string/currentBMI" />
+    
+      <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp" />
+
+
+</TableRow>  
+
+<TableRow 
+
+    android:id="@+id/MyRow21"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp" />
+
+</TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view6"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:layout_weight="1"
+        android:paddingBottom="3dp" />
+
+</TableRow>  
+
+<TableRow 
+
+    android:id="@+id/MyRow13"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="@string/previousBMI" />
+      
+      <TextView
+        android:id="@+id/textView7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp" />
+
+      
+</TableRow>  
+
+<TableRow
+    android:id="@+id/MyRow22"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minHeight="20dp"
+    android:minWidth="25dp" >
+      
+     <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="@string/date" />
+    
+      <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp" />
+      </TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view7"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:layout_weight="1"
+        android:paddingBottom="3dp" />
+
+</TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow25"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp" />
+
+</TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow26"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view25"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:layout_weight="1"
+        android:paddingBottom="3dp" />
+
+</TableRow> 
+
+<TableRow
+    android:id="@+id/MyRow15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+    
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:background="@drawable/calculate"
+           android:text="@string/calculate"
+           android:textColor="#ffffff" />
+
+</TableRow> 
+
+<TableRow 
+
+    android:id="@+id/MyRow16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+      <View
+        android:id="@+id/view8"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#1B9AF7"
+        android:paddingBottom="3dp" 
+        android:layout_weight="1"/>
+
+</TableRow> 
+
+    
+
+</TableLayout>
+<!-- From: file:/C:/Users/KudaD/AndroidstudioProjects/Hope%20World%20Wide/HopeWorldWide/src/main/res/layout/bmi.xml -->

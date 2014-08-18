@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+ <TableLayout
+     		 android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/tableLayout" android:background="#FFFFFF"
+             android:stretchColumns="*" >
+    
+    <TableRow 
+
+    android:id="@+id/MyRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="0"
+         style="@style/Text.Strong"
+         android:textSize="15sp" />
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/MyRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+        
+     
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        style="@style/Text.Strong"
+        android:textSize="15sp" />
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/My"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+        
+     
+     <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/Row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@android:color/transparent">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:stretchColumns="*" >
+             
+    <TableRow 
+
+    android:id="@+id/newTagTableRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+    <ImageButton
+        android:id="@+id/calculatelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/calclogo"
+        android:minHeight="110dp"
+        android:minWidth="110dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/calculator"
+        android:textColor="@android:color/black"/>
+
+    <ImageButton
+        android:id="@+id/childLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/clogo"
+        android:minHeight="110dp"
+        android:minWidth="110dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/child"
+        android:textColor="@android:color/black"/>
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/thisRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+     <TextView
+         android:id="@+id/calculatetext"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:text="@string/calc"
+         style="@style/Text.Strong.Blurry"
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/addtext"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:text="@string/addC"
+         style="@style/Text.Strong.Blurry"
+         android:textSize="15sp" />
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/Row2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+        <ImageButton
+            android:id="@+id/updatelogo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:contentDescription="@string/updatelogo"
+            android:minHeight="110dp"
+            android:minWidth="110dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit"/>
+
+  <ImageButton
+      android:id="@+id/synclogo"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="#FFFFFF"
+      android:contentDescription="@string/clogo"
+      android:minHeight="110dp"
+      android:minWidth="110dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/sync"
+      android:textColor="@android:color/black"/>
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/Row3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+   
+     
+     <TextView
+        android:id="@+id/updatetext"
+        android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:gravity="center"
+        android:text="@string/updateC"
+        style="@style/Text.Strong.Blurry"
+        android:textSize="15sp" />
+     
+     <TextView
+        android:id="@+id/synctext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/sync"
+        style="@style/Text.Strong.Blurry"
+        android:textSize="15sp" />
+
+</TableRow>
+   
+
+    
+ <TableRow 
+
+    android:id="@+id/Row4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    
+        <ImageButton
+            android:id="@+id/logoutlogo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:contentDescription="@string/logoutlogo"
+            android:minHeight="110dp"
+            android:minWidth="110dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logout" />
+
+</TableRow>
+
+    <TableRow 
+
+    android:id="@+id/Row5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+     
+        <TextView
+        android:id="@+id/logouttext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/logout"
+        style="@style/Text.Strong.Blurry"
+        android:textSize="15sp" />
+
+</TableRow>
+
+    		</TableLayout>
+		</TableRow>
+    
+  </TableLayout>
+
+ 
+
+</RelativeLayout>
